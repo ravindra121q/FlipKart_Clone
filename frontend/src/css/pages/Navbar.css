@@ -1,0 +1,82 @@
+#main_container {
+    height: 55px;
+    display: flex;
+    padding-left: 2rem;
+    align-items: center;
+    padding-top: 0.5rem;
+    width: 98%;
+    margin: auto;background-color: white;
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    width: 100%; 
+    justify-content: space-between;
+    padding-right: 1.5rem;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f0f5ff;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+
+.input::placeholder {
+    color: #9e9ea7;
+}
+
+.input:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+
+.group_last {
+    margin-left: 2rem;
+    align-items: center;
+    display: flex;
+    flex-wrap: initial;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-left: 1rem;
+    width: 100%; /* Change fixed width to 100% */
+}
+
+.group_last > div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 24px;
+}
+
+.group_last > div > h4 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.menu {
+    width: 0.1rem;
+    padding-right: 1.5rem;
+}
+
