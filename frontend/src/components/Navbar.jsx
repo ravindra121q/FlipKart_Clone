@@ -11,16 +11,10 @@ import {
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import BasicMenu from "./pages/HomePage_Menu";
 export const Navbar = () => {
-  const [anchorEl, setAnchorEl] =
-    (React.useState < null) | (HTMLElement > null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  const handleClick = () => {};
+  const handleClose = () => {};
   return (
     <div id="main_container">
       <div className="logo">
@@ -50,29 +44,8 @@ export const Navbar = () => {
           <h4>Become a Seller</h4>
         </div>
         <div>
-          <FontAwesomeIcon icon={faUser} />
-          <Button
-            id="basic-button"
-            aria-controls={open ? "basic-menu" : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? "true" : undefined}
-            onClick={handleClick}
-          >
-            Dashboard
-          </Button>
-          <Menu
-            id="basic-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            MenuListProps={{
-              "aria-labelledby": "basic-button",
-            }}
-          >
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
-            <MenuItem onClick={handleClose}>My account</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
-          </Menu>
+          
+          <BasicMenu />
         </div>
         <div>
           <FontAwesomeIcon icon={faCartShopping} />
